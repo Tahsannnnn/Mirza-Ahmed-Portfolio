@@ -8,7 +8,7 @@ export function Gallery() {
         
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-96">
           <div className="col-span-2 row-span-2 bg-gray-100 rounded-xl flex items-center justify-center text-muted-foreground">
-            Featured Image Placeholder
+            <img src="/client/src/assets/Fabrication.png" alt="Placeholder" className="w-full h-full object-cover rounded-xl" />
           </div>
           <div className="bg-gray-100 rounded-xl flex items-center justify-center text-muted-foreground text-sm">
             Image
