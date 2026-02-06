@@ -22,7 +22,7 @@ export function Skills() {
     {
       title: "Software",
       icon: <Code2 className="h-5 w-5" />,
-      skills: ["HTML5", "CSS3", "JavaScript", "TypeScript", "React (Learning)"]
+      skills: ["HTML5", "CSS3", "JavaScript (Learning)", "TypeScript (Learning)", "React (Learning)"]
     }
   ];
 

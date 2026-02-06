@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import fabricationImg from "../../assets/Fabrication.png";
 import convertedFileImg from "../../assets/Converted File.png";
+import solderImg from "../../assets/Solder.jpeg";
 
 export function Gallery() {
   return (
@@ -27,12 +28,19 @@ export function Gallery() {
               className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
             />
             <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
-              <span className="text-white font-medium">Converted File</span>
+              <span className="text-white font-medium">Circuitry</span>
             </div>
           </div>
 
-          <div className="bg-gray-50 rounded-xl flex items-center justify-center border-2 border-dashed border-gray-200">
-            <span className="text-muted-foreground text-sm font-medium">More to come soon</span>
+          <div className="bg-gray-100 rounded-xl overflow-hidden group relative">
+            <img 
+              src={solderImg} 
+              alt="Soldering Work" 
+              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" 
+            />
+            <div className="absolute inset-0 bg-black/40 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+              <span className="text-white text-xs font-medium">Soldering Work</span>
+            </div>
           </div>
           
           <div className="bg-gray-50 rounded-xl flex items-center justify-center border-2 border-dashed border-gray-200">
