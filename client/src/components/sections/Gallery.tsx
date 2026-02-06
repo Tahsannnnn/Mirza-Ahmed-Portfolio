@@ -8,7 +8,7 @@ export function Gallery() {
     <section className="py-24 bg-white border-t border-border">
       <div className="container mx-auto px-6">
         <h2 className="text-3xl font-display font-bold mb-12">Gallery & Misc</h2>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 h-[600px]">
           <div className="col-span-2 row-span-2 bg-gray-100 rounded-xl overflow-hidden group relative">
             <img 
@@ -20,7 +20,7 @@ export function Gallery() {
               <span className="text-white font-medium">Fabrication</span>
             </div>
           </div>
-          
+
           <div className="col-span-2 bg-gray-100 rounded-xl overflow-hidden group relative">
             <img 
               src={convertedFileImg} 
@@ -42,7 +42,7 @@ export function Gallery() {
               <span className="text-white text-xs font-medium">Soldering Work</span>
             </div>
           </div>
-          
+
           <div className="bg-gray-50 rounded-xl flex items-center justify-center border-2 border-dashed border-gray-200">
             <span className="text-muted-foreground text-sm font-medium">More to come soon</span>
           </div>
