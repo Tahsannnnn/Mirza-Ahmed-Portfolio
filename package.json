@@ -1,5 +1,4 @@
 {
-  "homepage":"https://tahsannnnn.github.io/Mirza-Ahmed-Portfolio/",
   "name": "rest-express",
   "version": "1.0.0",
   "type": "module",
@@ -11,8 +10,6 @@
     "start": "NODE_ENV=production node dist/index.cjs",
     "check": "tsc",
     "db:push": "drizzle-kit push"
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.10.0",
