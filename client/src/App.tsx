@@ -5,15 +5,22 @@ import { Toaster } from "@/components/ui/toaster";
 import { TooltipProvider } from "@/components/ui/tooltip";
 import NotFound from "@/pages/not-found";
 import Home from "@/pages/Home";
+import { Router as WouterRouter } from "wouter"; // 1. Rename the import to avoid conflict
+// ... your other imports
 
 function Router() {
   return (
-    <Switch>
-      <Route path="/" component={Home} />
-      <Route component={NotFound} />
-    </Switch>
+    // 2. Wrap Switch in WouterRouter with the base path
+    <WouterRouter base="/Mirza-Ahmed-Portfolio"> 
+      <Switch>
+        <Route path="/" component={Home} />
+        <Route component={NotFound} />
+      </Switch>
+    </WouterRouter>
   );
 }
+
+// ... rest of your App() function stays the same
 
 function App() {
   return (
