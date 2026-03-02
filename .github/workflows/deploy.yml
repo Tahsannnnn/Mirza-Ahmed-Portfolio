@@ -1,7 +1,10 @@
-name: Deploy React App
+name: Deploy Portfolio
 on:
   push:
-    branches: [ main ] # Or 'master'
+    branches: [ main ]
+
+permissions:
+  contents: write
 
 jobs:
   build-and-deploy:
@@ -19,9 +22,11 @@ jobs:
         run: |
           npm install
           npm run build
+          # Create a copy for GitHub 404 handling
+          cp dist/public/index.html dist/public/404.html
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./dist # Change to './build' if using Create React App
+          publish_dir: ./dist/public
