@@ -54,10 +54,19 @@ export function Hero() {
             transition={{ duration: 0.5, delay: 0.3 }}
             className="flex flex-wrap gap-4"
           >
-            <Button size="lg" className="h-12 px-8 text-base">
+            <Button 
+              size="lg" 
+              className="h-12 px-8 text-base"
+              onClick={() => document.getElementById('projects')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               View Projects
             </Button>
-            <Button size="lg" variant="outline" className="h-12 px-8 text-base group">
+            <Button 
+              size="lg" 
+              variant="outline" 
+              className="h-12 px-8 text-base group"
+              onClick={() => document.getElementById('bio')?.scrollIntoView({ behavior: 'smooth' })}
+            >
               About Me <ChevronRight className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
             </Button>
           </motion.div>
